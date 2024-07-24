@@ -1,0 +1,132 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #eeee;
+    color: black;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+header h1{
+    margin-left: 130px;
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+    margin-right: 120px;
+}
+
+header nav ul li {
+    display: inline;
+    margin-right: 10px;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    color: #708871;
+}
+
+.product-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    padding: 1rem;
+    justify-content: center;
+}
+
+.product-card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: calc(22.222% - 2rem);
+    box-sizing: border-box;
+    position: relative;
+}
+
+.product-card img {
+    width: 100%;
+    display: block;
+}
+
+.product-card h2 {
+    font-size: 1.2rem;
+    margin: 0.5rem;
+    text-align: center;
+}
+.product-card i{
+    color: rgb(216, 152, 33);
+}
+
+.product-card p {
+    color: #333;
+    font-size: 1rem;
+    margin: 0.5rem;
+    text-align: center;
+}
+
+.tag {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    color: white;
+    padding: 5px;
+    font-size: 0.8rem;
+    border-radius: 3px;
+}
+
+.tag.sale {
+    background-color: red;
+}
+.tag.Out{
+    background-color: black;
+}
+
+.tag.new {
+    background-color: green;
+}
+
+@media (max-width: 992px){
+    .product-card{
+        width: calc(70% - 2rem);
+    }
+    header nav i{
+        display: block;
+    }
+    header nav ul{
+        display: none;
+    }
+}
+
+@media (max-width: 768px) {
+    .product-card {
+        width: calc(50% - 2rem);
+    }
+    header nav i{
+        display: block;
+    }
+    header nav ul{
+        display: none;
+    }
+}
+
+@media (max-width: 576px) {
+    .product-card {
+        width: calc(50% - 2rem);
+    }
+    header nav i{
+        display: block;
+    }
+    header nav ul{
+        display: none;
+    }
+}
